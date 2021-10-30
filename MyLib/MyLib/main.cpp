@@ -1,4 +1,5 @@
 #include <ctime>
+#include "DateTime.h"
 
 bool IsLeapYear(int year)
 {
@@ -7,6 +8,29 @@ bool IsLeapYear(int year)
 		return true;
 	}
 	return false;
+}
+
+DateTime LaterInYear(DateTime d1, DateTime d2)
+{
+	if (d1.month > d2.month)
+	{
+		return d1;
+	}
+	else if (d2.month > d1.month)
+	{
+		return d2;
+	}
+	else
+	{
+		if (d1.day > d2.day)
+		{
+			return d1;
+		}
+		else
+		{
+			return d2;
+		}
+	}
 }
 
 int main()

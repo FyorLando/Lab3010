@@ -9,7 +9,6 @@ struct DateTime
 	int hour;
 	int minute;
 	int second;
-
 };
 
 #endif
