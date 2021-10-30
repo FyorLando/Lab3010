@@ -33,6 +33,11 @@ DateTime LaterInYear(DateTime d1, DateTime d2)
 	}
 }
 
+int DaysInYear(int year)
+{
+	return IsLeapYear(year) ? 366 : 365;
+}
+
 int main()
 {
 
